@@ -1,0 +1,58 @@
+.register-form-container form{
+    display: grid;
+    grid-template-areas: 
+    "input-one"
+    "input-two"
+    "button";
+    background-color: #f3f3f3;
+    padding: 2rem;
+    margin: 5rem auto;
+    align-items: center;
+    height: 50rem;
+    width: 40%;
+    border-radius: 5px;
+}
+
+    .register-form input{
+        width: 100%;
+        border: none;
+        font-size: 2rem;
+        height: 4rem;
+        border-radius: 5px;
+        background-color: white;
+        padding: 1rem;
+    }
+    .register-btn{
+        background-color: rgb(7, 207, 7);
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin-top: 1rem;
+        font-size: 2rem;
+        height: 4rem;
+        border-radius: 5px;
+    }
+    .register-btn:hover{
+        background-color: rgb(10, 175, 10);
+    }
+    .sign-heading{
+        margin-bottom: 2rem;
+        text-align: left;
+        font-size: 2rem;
+    }
+    .message{
+        color: red;
+        font-size: 1.5rem;
+    }
+    .already-have{
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 750px) {
+        .register-form-container form{
+            width: 80%;
+        }
+        .already-have{
+            font-size: 1.5rem;
+        }
+    }

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Poppins&display=swap');
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+  .header{
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    background-image: linear-gradient(
+        140deg, #FFFFFF00 0%, #EBEDEFDE 100%);
+  }
+  .logo {
+    width: 140px;
+  }
+ 
+  .topList{
+    display: flex;
+    list-style: none;
+  }
+  .header .nav a {
+    text-decoration: none;
+    padding: 0.3rem 0.9rem;
+    font-size: 2.3rem;
+    color: #415161;
+  }
+  .header .nav li {
+      transition: 0.5s;
+  }
+  .header .nav li:hover{
+    transform: scale(1.1); 
+  }
+  .header .nav a:hover {
+    color: #b9222c !important;
+  }
+  
+  .header .nav a.active {
+    transition: 0.3s;
+    padding: 0.3rem 0.9rem;
+    color: #b9222c !important;
+  }
+  
+  .header .burgerMenu {
+    display: none;
+    color: black;
+    font-size: 2.7rem;
+    margin-right: 0.3rem;
+    cursor: pointer;
+  }
+  .header .shoppingCart {
+    display: flex;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    top: 2rem;
+    right: 2.5rem;
+  }
+  .topIcon {
+    font-size: 1.5rem;
+    margin-right: 0.625rem;
+    color: #444;
+    cursor: pointer;
+  }
+  .shopping-icon{
+    width: 26px;
+      height: 26px;
+  }
+  .item-count {
+    position: absolute;
+    font-size: 13px;
+    font-weight: bold;
+    bottom: 9px;
+  }
+  .sign-out{
+    display: flex;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 790px) {
+    .header {
+      position: relative;
+    }
+  
+    .header .burgerMenu {
+      display: block;
+      position: absolute;
+      top: 2.5rem;
+      right: 1.5rem;
+    }
+    .nav {
+      flex-direction: column;
+      align-items: stretch;
+    }
+    .topList {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0;
+    }
+    /*  .header .nav ul .active {
+      display: block;
+    } */
+    .nav ul li {
+      margin: 0.9rem 0;
+    }
+    .header .shoppingCart {
+      position: absolute;
+      top: 1.2rem;
+      right: 4rem;
+    }
+    .activeBurger{
+      display: flex;
+    }
+    .sign-out{
+      flex-direction: column;
+    }
+  }
+  

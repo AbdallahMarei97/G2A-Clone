@@ -1,0 +1,82 @@
+.games-container-home{
+    display: grid;
+    grid-template-areas: 
+    "game-container game-container game-container";
+    margin-bottom: 3rem;
+}
+.featured-games-title{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 5rem;
+}
+.game-container-home{
+    background-color: #415161;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px;
+    justify-self: center;
+    text-align: center;
+    transition: 0.5s;
+}
+.game-container-home:hover{
+    transform: scale(1.03);
+}
+.game-photo-container img{
+    width: 350px;
+    border-radius: 5px;
+}
+.game-title-home{
+    font-size: 1.8rem;
+}
+.price-and-btn{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.price-and-btn a {
+    text-decoration: none;
+    color: white;
+    background-color: #F80000;
+    border: none;
+    padding: 0.6em;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.price-and-btn button{
+    text-decoration: none;
+    color: white;
+    background-color: #F80000;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer; 
+}
+.price-and-btn a:hover{
+    background-color: #b60909;
+}
+.price-and-btn a:hover button {
+    background-color: #b60909;
+}
+.price-and-btn span{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+@media screen and (max-width: 1050px){
+    .games-container-home{
+        grid-template-areas: 
+        "game-container"
+        "game-container"
+        "game-container";
+    }
+    .game-container-home{
+        margin-bottom: 3rem;
+    }
+    .game-photo-container img{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 500px){
+    .game-photo-container img{
+        width: 220px;
+    }
+}

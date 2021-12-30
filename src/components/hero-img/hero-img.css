@@ -1,0 +1,68 @@
+.home-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: "home-left home-right";
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(
+        140deg, #FFFFFF00 0%, #EBEDEFDE 100%);
+}
+.home-left{
+    color: #415161;
+    /* width: 30%; */
+    grid-area: home-left;
+    
+}
+.home-left h5{
+    font-size: 17px;
+    padding: 3rem 0 0;
+}
+.home-left h1{
+    font-size: 60px;
+    line-height: 7rem;
+    padding: 3rem 0;
+}
+.home-left p{
+    font-size: 15px;
+    padding-bottom: 3rem;
+}
+
+.home-left button{
+    color: white;
+    background-color: #F80000;
+    border: none;
+    padding: 0.6em;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    width: 45%;
+    cursor: pointer;
+}
+.home-left button:hover{
+    background-color: #b60909;
+}
+.home-right{
+    grid-area: home-right;
+}
+@media screen and (max-width: 925px) {
+    .home-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "home-left"
+        "home-right";
+        justify-content: center;
+        align-items: center;
+    }
+    .home-left{
+        width: 80%;
+        justify-self: center;
+    }
+    .home-right img{
+        width: 320px;
+        padding-top: 4rem;
+    }
+    .home-left button{
+        width: 50%;
+    }
+}
