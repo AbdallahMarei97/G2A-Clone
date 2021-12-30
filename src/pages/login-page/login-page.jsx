@@ -6,7 +6,7 @@ import "./login-page.css"
 function LoginPage(props) {
     return (
         <div>
-            <Login handleChange={props.handleChange} handleSubmit={props.handleSubmit} loginInfo={props.loginInfo}/>
+            <Login setLoggedUser={props.setLoggedUser}/>
         </div>
     )
 }

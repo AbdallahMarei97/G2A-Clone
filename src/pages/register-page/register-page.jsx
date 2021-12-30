@@ -5,7 +5,7 @@ import Register from '../../components/register/register'
 function RegisterPage(props) {
     return (
         <div>
-            <Register submitted={props.submitted} handleChange={props.handleChange} handleSubmit={props.handleSubmit} registerInfo={props.registerInfo}/>
+            <Register setLoggedUser={props.setLoggedUser}/>
         </div>
     )
 }
