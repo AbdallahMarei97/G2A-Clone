@@ -64,10 +64,10 @@ const NavBar = (props) => {
               <Link to="/login">SIGN IN</Link>
             </li>}  
           </ul>
-          {props.loggedUser ? <div className="shoppingCart" onClick={handleHidden}>
+          {props.loggedUser ? <Link to="/cart"><div className="shoppingCart" onClick={handleHidden}>
               <ShoppingIcon className="shopping-icon"/>
               <span className="item-count">0</span>
-          </div> : null}
+          </div></Link> : null}
           
         </div>
         {/* {this.props.hidden ? null : <CartDropdown removeCompletely={this.props.removeCompletely} currentUser={this.props.currentUser} handleHidden={this.props.handleHidden}/>} */}

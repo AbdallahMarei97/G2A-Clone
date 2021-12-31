@@ -12,6 +12,7 @@ import DetailedGame from './components/detailed-game/detailed-game';
 import games from './data/games/games';
 import rooms from './data/rooms/rooms';
 import DetailedRoom from './components/detailed-room/detailed-room';
+import CartPage from './pages/cart-page/cart-page';
 
 
 
@@ -29,6 +30,7 @@ function App() {
      <Route exact path="/rooms" element={<RoomsPage />} />
      <Route exact path="/games/:title" element={<DetailedGame games={games}/>} />
      <Route exact path="/rooms/:title" element={<DetailedRoom rooms={rooms}/>} />
+     <Route exact path="/cart" element={<CartPage />} />
      </Routes>
      <Footer />
     </div>
