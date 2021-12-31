@@ -28,9 +28,9 @@ function App() {
      <Route exact path="/register" element={<RegisterPage setLoggedUser={setLoggedUser} />} />
      <Route exact path="/games" element={<GamesPage />} />
      <Route exact path="/rooms" element={<RoomsPage />} />
-     <Route exact path="/games/:title" element={<DetailedGame games={games}/>} />
+     <Route exact path="/games/:title" element={<DetailedGame games={games} setLoggedUser={setLoggedUser}/>} />
      <Route exact path="/rooms/:title" element={<DetailedRoom rooms={rooms}/>} />
-     <Route exact path="/cart" element={<CartPage />} />
+     <Route exact path="/cart" element={<CartPage setLoggedUser={setLoggedUser} />} />
      </Routes>
      <Footer />
     </div>

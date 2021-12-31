@@ -66,7 +66,7 @@ const NavBar = (props) => {
           </ul>
           {props.loggedUser ? <Link to="/cart"><div className="shoppingCart" onClick={handleHidden}>
               <ShoppingIcon className="shopping-icon"/>
-              <span className="item-count">0</span>
+              <span className="item-count">{props.loggedUser.cartItems.reduce((total,item) => total + item.quantity, 0)}</span>
           </div></Link> : null}
           
         </div>

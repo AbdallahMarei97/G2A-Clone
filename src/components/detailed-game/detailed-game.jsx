@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import "./detailed-game.css"
 import { useParams, useNavigate } from "react-router-dom";
 
-function DetailedGame({games}) {
+function DetailedGame({games,setLoggedUser}) {
     const { title } = useParams();
     const navigate = useNavigate();
     const [user,setUser] = useState(JSON.parse(localStorage.getItem("loggedUser")) ? JSON.parse(localStorage.getItem("loggedUser")) : "")
@@ -21,6 +21,7 @@ function DetailedGame({games}) {
         const filteredAllUsers = allUsers.filter((data) => user.id !== data.id);
         filteredAllUsers.push(user);
         localStorage.setItem("users", JSON.stringify(filteredAllUsers));
+        setLoggedUser(JSON.parse(localStorage.getItem("loggedUser")))
      } else {
        user.cartItems.push({...item, quantity: 1})
        localStorage.setItem("loggedUser" , JSON.stringify(user))
@@ -28,9 +29,9 @@ function DetailedGame({games}) {
         const filteredAllUsers = allUsers.filter((data) => user.id !== data.id);
         filteredAllUsers.push(user);
         localStorage.setItem("users", JSON.stringify(filteredAllUsers));
+        setLoggedUser(JSON.parse(localStorage.getItem("loggedUser")))
      }
-      }
-            
+      }        
   }
 
     return (

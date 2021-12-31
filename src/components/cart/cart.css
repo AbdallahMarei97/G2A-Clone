@@ -35,10 +35,12 @@
     background-color: #4c4d5f;
     color: white;
     border: solid 2px #4c4d5f;
+    cursor: pointer;
   }
   .go-to-shop:hover {
     background: #fff;
     color: #4c4d5f;
+    
   }
   
   .total {
@@ -55,6 +57,7 @@
     margin-left: 3rem;
     font-size: 1.5rem;
     padding: 1rem;
+    cursor: pointer;
   }
   .confirm-buy:hover {
     background-color: #c90303;
