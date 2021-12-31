@@ -1,10 +1,13 @@
 .reservation-form-container {
-    width: 80%;
+    width: 50%;
     margin: 25px auto;
     padding: 1.25rem;
     display: flex;
     flex-direction: column;
     text-align: center;
+    background-color: #415161;
+    color: white;
+    border-radius: 5px;
   }
   .reservation-form-container label {
     font-size: 16px;
@@ -25,9 +28,13 @@
     font-size: 1.25rem;
   }
   .reservation-form-container form input {
-    width: 35%;
+    width: 70%;
     padding: 0.75rem;
     border: 1px solid #ddd;
     border-radius: 5px;
   }
-  
+  @media screen and (max-width: 600px){
+    .reservation-form-container{
+        width: 90%;
+    }
+  }
