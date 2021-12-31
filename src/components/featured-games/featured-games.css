@@ -17,6 +17,7 @@
     justify-self: center;
     text-align: center;
     transition: 0.5s;
+    margin-bottom: 3rem;
 }
 .game-container-home:hover{
     transform: scale(1.03);
@@ -67,9 +68,6 @@
         "game-container"
         "game-container"
         "game-container";
-    }
-    .game-container-home{
-        margin-bottom: 3rem;
     }
     .game-photo-container img{
         width: 400px;
