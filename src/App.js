@@ -14,6 +14,7 @@ import rooms from './data/rooms/rooms';
 import DetailedRoom from './components/detailed-room/detailed-room';
 import CartPage from './pages/cart-page/cart-page';
 import CheckoutPage from './pages/checkout-page/checkout-page';
+import Userprofile from './pages/user-profile/user-profile';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
      <Route exact path="/rooms/:title" element={<DetailedRoom rooms={rooms}/>} />
      <Route exact path="/cart" element={<CartPage setLoggedUser={setLoggedUser} />} />
      <Route exact path="/checkout" element={<CheckoutPage setLoggedUser={setLoggedUser} />} />
+     <Route exact path="/profile" element={<Userprofile setLoggedUser={setLoggedUser} loggedUser={loggedUser} />} />
      </Routes>
      <Footer />
     </div>
