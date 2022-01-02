@@ -30,7 +30,7 @@ function CheckoutForm({setLoggedUser}) {
         setLoggedUser(JSON.parse(localStorage.getItem("loggedUser")));
         Swal.fire({
           icon: "success",
-          title: "Good Job",
+          title: "Thank you",
           text: "Thank you for purchasing from us",
         }).then((result) => {
           navigate("/")

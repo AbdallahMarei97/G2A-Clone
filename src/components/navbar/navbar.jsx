@@ -3,12 +3,14 @@ import "./navbar.css";
 import { Link} from "react-router-dom";
 import {ReactComponent as ShoppingIcon} from "../../assets/shopping-bag.svg";
 import {ReactComponent as Logo} from "../../assets/logo_g2a_white.svg";
-// import CartDropdown from "../cart-dropdown/cart-dropdown.component";
+import CartDropdown from "../cart-dropdown/cart-dropdown";
 
 const NavBar = (props) => {
   
     const [navBarActive, setNavBarActive] = useState(false)
-    const [hidden,setHidden] = useState(true)
+    const [hidden,setHidden] = useState(true);
+    const [hiddenCart,setHiddenCart] = useState(true);
+
     
 
   const showMenu = () => {
@@ -18,7 +20,7 @@ const NavBar = (props) => {
 
   
   const handleHidden = () => {
-    setHidden(!hidden)
+    setHiddenCart(!hiddenCart)
   }
   const signOut = () => {
     localStorage.removeItem("loggedUser");
@@ -54,13 +56,13 @@ const NavBar = (props) => {
               <Link to="/login">SIGN IN</Link>
             </li>}  
           </ul>
-          {props.loggedUser ? <Link to="/cart"><div className="shoppingCart" onClick={handleHidden}>
+          {props.loggedUser ? <div className="shoppingCart" onClick={handleHidden}>
               <ShoppingIcon className="shopping-icon"/>
               <span className="item-count">{props.loggedUser.cartItems.reduce((total,item) => total + item.quantity, 0)}</span>
-          </div></Link> : null}
+          </div>: null}
           
         </div>
-        {/* {this.props.hidden ? null : <CartDropdown removeCompletely={this.props.removeCompletely} currentUser={this.props.currentUser} handleHidden={this.props.handleHidden}/>} */}
+        {hiddenCart ? null : <CartDropdown loggedUser={props.loggedUser} handleHidden={setHiddenCart} setLoggedUser={props.setLoggedUser} />}
       </div>
     );
   
