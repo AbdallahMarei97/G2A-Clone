@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 import "./checkout-form.css"
+import Swal from 'sweetalert2'
 
 function CheckoutForm({setLoggedUser}) {
     const [user,setUser] = useState(JSON.parse(localStorage.getItem("loggedUser")))
@@ -27,7 +28,14 @@ function CheckoutForm({setLoggedUser}) {
         localStorage.setItem("users", JSON.stringify(filteredAllUsers));
         setUser(JSON.parse(localStorage.getItem("loggedUser")));
         setLoggedUser(JSON.parse(localStorage.getItem("loggedUser")));
-        navigate("/")
+        Swal.fire({
+          icon: "success",
+          title: "Good Job",
+          text: "Thank you for purchasing from us",
+        }).then((result) => {
+          navigate("/")
+        }
+        );
     }
 
     return (
