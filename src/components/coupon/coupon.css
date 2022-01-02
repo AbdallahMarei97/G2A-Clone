@@ -1,0 +1,47 @@
+.coupon-form-container {
+    width: 50%;
+    margin: 25px auto;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #415161;
+    color: white;
+    border-radius: 5px;
+  }
+  .coupon-form-container label {
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+  }
+  .coupon-btn {
+    display: block;
+    width: 200px;
+    margin: 1.1rem auto 0.1rem auto;
+    padding: 10px 2px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    background-color: rgb(77, 101, 233);
+    font-size: 1.25rem;
+  }
+  .coupon-btn:hover{
+    background-color: rgb(39, 62, 194);
+  }
+  .coupon-form-container form input {
+    width: 70%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .coupon-total-price{
+      font-size: 3rem;
+  }
+  @media screen and (max-width: 600px){
+    .coupon-form-container{
+        width: 90%;
+    }
+  }

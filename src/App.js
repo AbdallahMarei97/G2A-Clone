@@ -13,7 +13,7 @@ import games from './data/games/games';
 import rooms from './data/rooms/rooms';
 import DetailedRoom from './components/detailed-room/detailed-room';
 import CartPage from './pages/cart-page/cart-page';
-
+import CheckoutPage from './pages/checkout-page/checkout-page';
 
 
 function App() {
@@ -31,6 +31,7 @@ function App() {
      <Route exact path="/games/:title" element={<DetailedGame games={games} setLoggedUser={setLoggedUser}/>} />
      <Route exact path="/rooms/:title" element={<DetailedRoom rooms={rooms}/>} />
      <Route exact path="/cart" element={<CartPage setLoggedUser={setLoggedUser} />} />
+     <Route exact path="/checkout" element={<CheckoutPage setLoggedUser={setLoggedUser} />} />
      </Routes>
      <Footer />
     </div>

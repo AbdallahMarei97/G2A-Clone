@@ -24,17 +24,7 @@ const NavBar = (props) => {
     localStorage.removeItem("loggedUser");
     props.setLoggedUser("")
   }
-    // const localUsers = JSON.parse(localStorage.getItem("users"))
-    // let counter = 0;
-    // if(this.props.currentUser){
-    //   localUsers.forEach(user => {
-    //       if(user.username === this.props.currentUser.username && user.password === this.props.currentUser.pass){
-    //           let cart = user.cartItems
-    //           console.log(cart)
-    //           cart.map(item => counter += item.quantity)    
-    //       }
-    //   })
-    // }
+   
     return (
       <div className="header">
         <div onClick={showMenu}>
