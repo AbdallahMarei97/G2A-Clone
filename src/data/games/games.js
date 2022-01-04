@@ -25,7 +25,7 @@ const games = [
     },
     {
       id: 4,
-      title: "Assassin's Creed Odyssy",
+      title: "Assassin's Creed Ody",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit.",
       image: "/images/ody.png",
@@ -41,7 +41,7 @@ const games = [
     },
     {
       id: 6,
-      title: "Assassin's Creed Syndicate",
+      title: "Assassin's Creed Syn",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit.",
       image: "/images/synd.png",
@@ -49,7 +49,7 @@ const games = [
     },
     {
       id: 7,
-      title: "Assassin's Creed Valhala",
+      title: "Assassin's Creed Val",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam id dolor id nibh ultricies vehicula ut id elit.",
       image: "/images/val.png",
