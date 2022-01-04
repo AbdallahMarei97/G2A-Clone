@@ -12,7 +12,7 @@ function FeaturedGames() {
             </div>
             <div className='games-container-home'>
             {games.filter((game,index) => index <3).map((game) => (
-          <div className="game-container-home" key={game.id}>
+          <div data-aos="fade-up" data-aos-duration="2000" className="game-container-home" key={game.id}>
             <div className="game-photo-container">
               <img className="game-photo-home" src={game.image} alt={game.title} />
             </div>

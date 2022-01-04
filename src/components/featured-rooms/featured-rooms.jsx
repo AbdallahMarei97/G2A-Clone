@@ -12,7 +12,7 @@ function FeaturedRooms() {
             </div>
             <div className='featured-rooms'>
                 {rooms.filter((item,index) => index < 3).map(room => (
-                     <div className="room-container-home" key={room.id}>
+                     <div data-aos="fade-up" data-aos-duration="2000" className="room-container-home" key={room.id}>
                      <div className="room-photo-container">
                        <img className="room-photo-home" src={room.image} alt={room.title} />
                      </div>
