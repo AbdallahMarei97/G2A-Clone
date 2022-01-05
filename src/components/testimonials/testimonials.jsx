@@ -3,16 +3,16 @@ import SimpleImageSlider from "react-simple-image-slider";
 import "./testimonials.css"
 
 const images = [
-    { url: "images/last-of-us-reviews.png" },
-    { url: "images/fallout.jpg" },
-    { url: "images/cross.jpg" },
+    { url: "images/wit.jpg" },
+    { url: "images/ghost.jpg" },
+    { url: "images/red.jpg" },
   ];
 
 function Testimonials() {
     return (
         <div>
             <div>
-                <h1 className='featured-games-title'>Our Game Reviews</h1>
+                <h1 className='featured-games-title'>Our Fav Screenshots</h1>
                 <hr />
             </div>
             <div className="image-slider">

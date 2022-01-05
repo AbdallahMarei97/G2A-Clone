@@ -1,0 +1,28 @@
+.about-container{
+    display: grid;
+    grid-template-areas: "paragraph image"
+}
+.about-container img{
+    height: 300px;
+    margin-right: 6rem;
+}
+.about-container p{
+    font-size: 3rem;
+    width: 80%;
+    font-weight: 900;
+    margin-left: 7rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+@media screen and (max-width: 775px){
+    .about-container{
+        display: grid;
+        grid-template-areas: "paragraph"
+        "image";
+        justify-content: center;
+    }
+    .about-container img{
+        justify-self: center;
+        margin: 0;
+    }
+}
