@@ -51,7 +51,7 @@
   }
   .confirm-buy {
     border-radius: 20px;
-    background-color: #950101;
+    background-color: #01953f;
     color: white;
     border: none;
     margin-left: 3rem;
@@ -60,7 +60,7 @@
     cursor: pointer;
   }
   .confirm-buy:hover {
-    background-color: #c90303;
+    background-color: #087535;
   }
   
   @media screen and (max-width: 850px) {
