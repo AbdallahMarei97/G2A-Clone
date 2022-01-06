@@ -38,7 +38,7 @@ function Footer() {
               <i className="fas fa-phone-alt"></i> +962798861423
             </p>
             <p className="contatUsPara">
-              <i className="fas fa-envelope"></i> ifix@gmail.com
+              <i className="fas fa-envelope"></i> G2A@gmail.com
             </p>
           </div>
         </div>
