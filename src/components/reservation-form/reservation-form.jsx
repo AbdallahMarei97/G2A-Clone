@@ -167,7 +167,7 @@ function ReservationForm({ service }) {
             value={reservation.date}
             onChange={handleChange}
             required
-            min="2021-12-27"
+            min="2022-01-13"
           />
         </div>
         <div>
